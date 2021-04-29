@@ -77,7 +77,7 @@ function draw() {
     score = score + Math.round(getFrameRate()/60);
     ground.velocityX = -(6 + 3*score/100);
     camera.position.x = displayWidth/2;
-    camera.position.y = cars[index-1].y
+    camera.position.y = trex[index-1].y
     if(keyDown("space") && trex.y >= 159) {
       trex.velocityY = -12;
     }
